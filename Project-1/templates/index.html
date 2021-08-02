@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>PORJECT 1 PART 2</title>
+</head>
+<body>
+  <h3>Name: Deepesh Bhatta <br>
+      UTA_ID: 1001837305</h3>
+    <h3>SEARCH BY FIRST NAME AND LAST NAME:</h3>
+    <form action="./search" method="POST" enctype="multipart/form-data">
+        <input type="text" value="" name="Fname" placeholder="Enter First Name">
+        <input type="text" value="" name="Lname" placeholder="Enter Last Name">
+        <input type="submit" value="Submit">
+    </form>
+      <hr>
+      <b><p> NAME : {{name}}</p></b>
+      <table>
+        <hr>
+        <tr>
+            <td><b>PROJECT_NAME</b></td>
+            <td><b>HOURS_PER_WEEK</b></td>
+        </tr>
+        {% for person in results %}
+        <tr>
+            <td>{{person[0]}}</td>
+            <td>{{person[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <h3>Find the total (sum) of all employee salaries who work in the given department:</h3>
+    <form action="./findsum" method="POST" enctype="multipart/form-data">
+        <input type="text" value="" name="Dname" placeholder="Enter Department Name">
+        <input type="submit" value="Submit">
+    </form>
+      <hr>
+      <b><p>DEPARTMENT NAME : {{Dname}}</p></b>
+      <table>
+        <tr>
+            <td><b>TOTAL SUM OF SALARY</b></td>
+            <hr>
+        </tr>
+        <tr>
+            <td>{{sum}}</td>
+        </tr>
+    </table>
+</body>
+</html>
