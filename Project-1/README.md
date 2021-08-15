@@ -18,6 +18,9 @@
 ### insert_data.py: 
 * INSERT a new record in a PROJECT table.
 
+### retrieve_info.py: 
+* Retrieve information using flask and MySQL.
+
 ##### Packages Used:
 * flask
 * os
