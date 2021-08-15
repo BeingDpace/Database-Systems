@@ -16,7 +16,7 @@
 * Create 2 VIEWS PROJ_EMPS(PNAME, LNAME, FNAME, HOURS) and PROJ_SUMMARY (PNAME, NO_OF_EMPS, TOTAL_HOURS) .
 
 ### insert_data.py: 
-* INSERT a new record in each of the 2 tables DEPARTMENT and PROJECT.
+* INSERT a new record in a PROJECT table.
 
 ##### Packages Used:
 * flask
