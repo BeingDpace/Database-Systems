@@ -1,15 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 10 23:12:41 2021
-
-@author: AvengersEndGame
-"""
-
 import mysql.connector
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="root",
+  password="",
   port=3306,
   database="companydb",
 )
